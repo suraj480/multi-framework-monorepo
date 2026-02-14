@@ -1,0 +1,23 @@
+{
+  "name": "multi-framework-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev --concurrency=15",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "npm@8.0.0",
+  "devDependencies": {
+    "turbo": "^2.8.7"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
